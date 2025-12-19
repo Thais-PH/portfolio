@@ -53,7 +53,7 @@ const Hero = () => (
         </h1>
         
         <p className="text-xl text-slate-600 max-w-lg leading-relaxed text-balance">
-          Je suis Thaïs. Actuellement en <strong>Master 2 à MyDigitalSchool Nantes</strong> et en alternance à la <strong>DGFiP</strong>. Je conçois des expériences web modernes et performantes.
+          Je suis Thaïs. Actuellement en <strong>Master 2 à MyDigitalSchool Nantes</strong> et en alternance à du côté de <strong>l'ESI de la DGFiP de Nantes</strong>. Je conçois des expériences web modernes et performantes.
         </p>
 
         <div className="flex flex-wrap gap-4 pt-4">
