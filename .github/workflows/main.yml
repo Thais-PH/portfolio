@@ -18,13 +18,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-      name: Install dependencies
+    - name: Install dependencies
       run: npm install
 
-      name: Build Next.js project
+    - name: Build Next.js project
       run: npm run build
 
-      name: Build Docker image
+    - name: Build Docker image
       run: docker build -t portfolio .
 
 
