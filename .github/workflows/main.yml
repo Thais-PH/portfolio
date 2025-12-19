@@ -21,10 +21,10 @@ jobs:
       name: Install dependencies
       run: npm install
 
-      name: Build NextJS project
+      name: Build Next.js project
       run: npm run build
 
       name: Build Docker image
       run: docker build -t portfolio .
 
-      
+
