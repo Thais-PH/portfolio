@@ -11,20 +11,20 @@ on:
 
 jobs:
   build:
-  name: Build Next.js
-  runs-on: ubuntu-latest
+    name: Build Next.js
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Build Next.js project
-      run: npm run build
+      - name: Build Next.js project
+        run: npm run build
 
-    - name: Build Docker image
-      run: docker build -t portfolio .
+      - name: Build Docker image
+        run: docker build -t portfolio .
 
 
