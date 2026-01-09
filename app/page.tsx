@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 // --- COMPOSANTS UI ---
@@ -105,8 +104,8 @@ const Skills = () => {
         <SectionTitle>Expertise Technique</SectionTitle>
         
         <div className="grid md:grid-cols-3 gap-8">
-          {skillCategories.map((category, idx) => (
-            <div key={idx} className="p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          {skillCategories.map((category) => (
+            <div key={category.title} className="p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <div className={`w-12 h-12 ${category.color} rounded-xl mb-6 flex items-center justify-center`}>
                 <div className="w-6 h-6 bg-slate-900/10 rounded-full" />
               </div>
@@ -136,7 +135,7 @@ const Projects = () => (
 
       <div className="grid md:grid-cols-2 gap-x-12 gap-y-24">
         {[1, 2, 3, 4].map((item, index) => (
-          <div key={item} className={`group cursor-pointer ${index % 2 !== 0 ? "md:mt-24" : ""}`}>
+          <div key={item} className={`group cursor-pointer ${index % 2 === 0 ? "" : "md:mt-24"}`}>
             <div className="relative aspect-[4/3] bg-white rounded-2xl overflow-hidden mb-6 shadow-sm border border-slate-100">
               <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-700 ease-out" />
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/5">
