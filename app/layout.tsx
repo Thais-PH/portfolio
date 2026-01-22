@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import FaroInitializer from "./components/FaroInitializer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <body className={`${inter.className} antialiased selection:bg-primary selection:text-slate-900`}>
+        <FaroInitializer />
         {children}
       </body>
     </html>
